@@ -1,0 +1,20 @@
+{
+  "name": "prettier_standard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "linters": {
+      "**/*": [
+        "prettier-standard --lint",
+        "git add"
+      ]
+    }
+  },
+  "devDependencies": {
+    "prettier-standard": "^16.1.0"
+  }
+}
